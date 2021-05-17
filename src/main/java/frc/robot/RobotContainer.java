@@ -129,7 +129,7 @@ private final Joystick m_joy2 = new Joystick(1);
    */
   public Command getArcadeDriveCommand() {
     return new DriveCommand(
-        m_drivetrain, () -> -m_controller.getRawAxis(1), () -> m_controller.getRawAxis(2));
+        m_drivetrain, () -> -m_controller.getRawAxis(1), () -> m_controller.getRawAxis(4));
   }
 
 }
